@@ -6,23 +6,33 @@ export default function App({ name }) {
   return (
     <Router>
       <div>
-        <p>{name} is mounted</p>
         <nav>
-          <ul>
+          <ul
+            style={{
+              display: "flex",
+              alignItems: "center",
+              listStyleType: "none",
+              height: "100%",
+              marginTop: "-17%",
+            }}
+          >
             <li>
-              <Link to="/react">Home</Link>
+              <Link to="/react" style={{ textDecoration: "none" }}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/react/about">About</Link>
+              <Link to="/react/about" style={{ textDecoration: "none" }}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/react/users">Users</Link>
+              <Link to="/react/users" style={{ textDecoration: "none" }}>
+                Users
+              </Link>
             </li>
           </ul>
         </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/react/about">
             <About />
@@ -40,13 +50,13 @@ export default function App({ name }) {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return <h2>React: Home</h2>;
 }
 
 function About() {
-  return <h2>About</h2>;
+  return <h2>React:About</h2>;
 }
 
 function Users() {
-  return <h2>Users</h2>;
+  return <h2>React:Users</h2>;
 }

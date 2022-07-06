@@ -3,8 +3,10 @@ import App from "./App";
 
 export default function Root(props) {
   return (
-    <section style={{ marginTop: 100 }}>
-      <App name="Testapp" />
+    <section
+      style={{ marginTop: "300px", textAlign: "center", fontSize: "20px" }}
+    >
+      <App name="Tanya" />
     </section>
   );
 }
