@@ -7,12 +7,20 @@
 
   .toolbar {
     text-align: center;
-    margin-top: 300px;
-    font-weight: 800;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 3%;
   }
 </style>
 
-<div class="toolbar" role="banner">Hi From the Angular App By Tanya!</div>
+<div class="toolbar" role="banner">
+  <a routerLink="home" style="text-decoration: none">Home</a>
+  <a routerLink="about" style="text-decoration: none">About</a>
+  <a routerLink="users" style="text-decoration: none">Users</a>
+</div>
 
 <router-outlet></router-outlet>

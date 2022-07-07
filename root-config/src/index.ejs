@@ -56,6 +56,7 @@
         "imports": {
           "@org1/root-config": "//localhost:9000/org1-root-config.js",
           "@org1/react-app": "//localhost:8080/org1-react-app.js",
+          "@org1/vue-app": "//localhost:8081/org1-vue-app.js",
           "angular-app": "//localhost:4200/main.js"
         }
       }
@@ -131,6 +132,9 @@
         background: rgba(255, 255, 255, 0.9);
         color: black;
       }
+      footer {
+        bottom: 0;
+      }
     </style>
     <div class="navbar">
       <ul>
@@ -145,6 +149,7 @@
         </a>
       </ul>
     </div>
+
     <script>
       System.import("@org1/root-config");
     </script>
@@ -152,5 +157,6 @@
       show-when-local-storage="devtools"
       dev-libs
     ></import-map-overrides-full>
+    <footer>Hello</footer>
   </body>
 </html>

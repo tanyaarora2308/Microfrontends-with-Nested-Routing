@@ -12,6 +12,12 @@ registerApplication({
   activeWhen: ["/angular"],
 });
 
+registerApplication({
+  name: "@org1/vue-app",
+  app: () => System.import("@org1/vue-app"),
+  activeWhen: ["/vue"],
+});
+
 start({
   urlRerouteOnly: true,
 });
