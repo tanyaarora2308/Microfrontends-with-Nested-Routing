@@ -18,9 +18,15 @@
 </style>
 
 <div class="toolbar" role="banner">
+  <!-- Hello -->
   <a routerLink="home" style="text-decoration: none">Home</a>
   <a routerLink="about" style="text-decoration: none">About</a>
   <a routerLink="users" style="text-decoration: none">Users</a>
+  <!-- <ul class="list-group">
+    <li *ngFor="let post of posts" class="list-group-item">
+      {{ post.title }}
+    </li>
+  </ul> -->
 </div>
 
 <router-outlet></router-outlet>

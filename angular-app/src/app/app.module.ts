@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { AboutComponent } from './about/about.component';
 import appRoutes from './routerconfig';
+import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 
@@ -13,6 +14,7 @@ import { UsersComponent } from './users/users.component';
   declarations: [AppComponent, AboutComponent, HomeComponent, UsersComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule,
     RouterModule.forRoot(appRoutes),
