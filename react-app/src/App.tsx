@@ -74,25 +74,32 @@ function Users() {
   }, []);
 
   return (
-    <div>
+    <div
+      style={{
+        fontFamily:
+          "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
+      }}
+    >
       <br />
-      <h1 style={{ textAlign: "center" }}>
+      <h1 style={{ textAlign: "center", marginTop: "-37px" }}>
         React: Users depicting server side rendering
       </h1>
       {error && (
         <div>{`There is a problem fetching the post data - ${error}`}</div>
       )}
-      <ol>
-        {data &&
-          data.map((props) => (
-            <li key={props.id}>
-              <p>
-                <span>{props.name}:</span> {props.address.street}{" "}
-                {props.address.suite} {props.address.city}
-              </p>
-            </li>
-          ))}
-      </ol>
+      <div>
+        <ol>
+          {data &&
+            data.map((props) => (
+              <li key={props.id} style={{ color: "#66B2FF" }}>
+                <p>
+                  <span>{props.name}:</span> {props.address.street}{" "}
+                  {props.address.suite} {props.address.city}
+                </p>
+              </li>
+            ))}
+        </ol>
+      </div>
     </div>
   );
 }
